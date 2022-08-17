@@ -14,7 +14,7 @@ public class ReadPDFFile {
 		String myText = textFromPage.trim().replaceAll("[\\t\\n\\r]+","");
 		String newText = myText.trim().replaceAll("  "," ");
 		System.out.println(newText);
-		String userText = "Vikas Flowrte Gateway Virtual Edition\r\n"
+		String userText = "SteelTest Flowrte Gateway Virtual Edition\r\n"
 				+ "100K FPM License; 1-9 users\r\n"
 				+ "Billing Frequency : Annually\r\n"
 				+ "Start Date : 6/7/2023 - End Date : 5/7/2024";
