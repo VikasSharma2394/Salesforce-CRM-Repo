@@ -20,7 +20,7 @@ public class ExecuteLeadTest {
 	static Properties prop;
 	@Test
 	public void LeadTest () throws Exception {
-		propFile = new FileInputStream("D:\\Workspace Eclipse\\Demo CRM\\src\\OBRepository\\SalesforceOR.properties");
+		propFile = new FileInputStream("D:\\GitData\\Salesforce-CRM-Repo\\Demo CRM\\src\\OBRepository\\SalesforceOR.properties");
 		prop = new Properties();
 		prop.load(propFile);
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());

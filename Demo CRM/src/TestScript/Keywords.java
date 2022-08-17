@@ -23,7 +23,7 @@ static FileInputStream file;
 static Properties prop;
 Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 public void openBrowser(String snapshotPath, String keyword, String wantSnapshot) throws Exception{
-System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\SSTS\\OpKey\\OpKey Execution Agent\\AgentData\\Plugins\\libs\\Drivers\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver","C:\\Users\\Vikas\\Desktop\\Excel File\\chromedriver_win32\\chromedriver.exe");
 driver = new ChromeDriver();
 driver.manage().window().maximize();
 if(wantSnapshot.equals("Yes")) {
@@ -32,7 +32,7 @@ File destFile = new File(snapshotPath+keyword+".png");
 FileUtils.copyFile(srcFile, destFile);
 }
 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-file = new FileInputStream("D:\\Workspace Eclipse\\Demo CRM\\src\\OBRepository\\SalesforceOR.properties");
+file = new FileInputStream("D:\\GitData\\Salesforce-CRM-Repo\\Demo CRM\\src\\OBRepository\\SalesforceOR.properties");
 prop = new Properties();
 prop.load(file);
 }
