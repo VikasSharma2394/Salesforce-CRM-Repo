@@ -16,6 +16,8 @@ public class HandleMultipleWindows {
 		Thread.sleep(5000);
 		driver.switchTo().window((String)data[1]);
 		Thread.sleep(5000);
+		driver.switchTo().window((String)data[0]);
+		Thread.sleep(5000);
 		driver.quit();
 	}
 
