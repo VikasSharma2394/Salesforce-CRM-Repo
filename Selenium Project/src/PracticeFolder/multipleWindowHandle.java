@@ -2,6 +2,7 @@ package PracticeFolder;
 
 import java.io.File;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
@@ -20,6 +21,7 @@ public class multipleWindowHandle {
 		EdgeDriver edge = new EdgeDriver();
 		edge.manage().window().maximize();
 		edge.get("https://recruiter.monsterindia.com/");
+		edge.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 		edge.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[2]/a")).click();
 		Set<String> windowsid = edge.getWindowHandles();
 		Object [] data = windowsid.toArray();
