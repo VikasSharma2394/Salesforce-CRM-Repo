@@ -26,7 +26,7 @@ public class ExecuteLeadTest {
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 		Keywords key = new Keywords();
 		ArrayList data= new ArrayList();
-		FileInputStream file = new FileInputStream("C:\\Users\\Vikas\\Desktop\\Excel File\\LeadSuite.xlsx");
+		FileInputStream file = new FileInputStream("E:\\Lead Test\\LeadSuite.xlsx");
 		XSSFWorkbook wrbk = new XSSFWorkbook(file);
 		XSSFSheet s = wrbk.getSheet("TestData");
 		Iterator itr = s.iterator();
