@@ -14,13 +14,12 @@ public class WebWindowhandle {
 		driver.get("https://www.airindia.in/");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("/html/body/form[1]/div[4]/div/div[5]/div/div/div[2]/a/img")).click();
-		Set windowsId = driver.getWindowHandles();
-		Object [] data = windowsId.toArray();
-		driver.switchTo().window((String)data[1]);
 		Thread.sleep(2000);
+		Set windowsID = driver.getWindowHandles();
+		Object [] data = windowsID.toArray();
 		driver.switchTo().window((String)data[0]);
-		Thread.sleep(2000);
-		driver.quit();
+		Thread.sleep(5000);
+	    driver.quit();
 	}
 
 }
