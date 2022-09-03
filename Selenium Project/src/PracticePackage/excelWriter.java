@@ -1,8 +1,10 @@
 package PracticePackage;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -37,6 +39,8 @@ public class excelWriter {
 		cell6.setCellValue("Sharma");
 		wrk1.write(new FileOutputStream("D:\\Excel Data\\Magic Excel.xlsx"));
 		wrk1.close();
+	    wrk1.getSheet("Sharma");
+	    System.out.println("Cell value is "+row3.getCell(0));
 		System.out.println("Executed");
 	}
 
