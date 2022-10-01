@@ -46,7 +46,7 @@ public void NavigateURL(String data, String snapshotPath, String keyword, String
 }
 public void TypeText(String data, String object1, String snapshotPath, String keyword, String wantSnapshot) throws Exception {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
-    js.executeScript("arguments[0].setAttribute('style', 'background: white; border: 2px solid red;');", driver.findElement(By.xpath(prop.getProperty(object1))));
+    js.executeScript("arguments[0].setAttribute('input', 'background: yellow; border: 2px solid red;');", driver.findElement(By.xpath(prop.getProperty(object1))));
 	driver.findElement(By.xpath(prop.getProperty(object1))).sendKeys(data);
 	if(wantSnapshot.equals("Yes")) {
 		File srcFile = driver.getScreenshotAs(OutputType.FILE);
