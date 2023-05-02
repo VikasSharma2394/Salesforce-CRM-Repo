@@ -6,12 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import net.bytebuddy.agent.builder.AgentBuilder.InitializationStrategy.SelfInjection.Split;
 
 public class launchBrowser {
-	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\SSTS\\OpKey\\OpKey Execution Agent\\AgentData\\Plugins\\libs\\Drivers\\chromedriver.exe");		ChromeDriver driver = new ChromeDriver();
-try{
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://cresconnect.crestechglobal.com");
+	public static void main(String[] args)throws Exception {
+		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\SSTS\\OpKey\\OpKey Execution Agent\\AgentData\\Plugins\\libs\\Drivers\\chromedriver.exe");		
+		ChromeDriver driver = new ChromeDriver();
+		try {
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		driver.get("https://mcec.ungerboeck.net/test/app85.cshtml");
+		Thread.sleep(300000);
 		String s = "VikasSharma";
 		String reverse = "";
 		String []s1 = s.split("s");
@@ -22,12 +24,12 @@ try{
 		}
 		System.out.println(reverse);
 		
-		driver.findElement(By.name("username")).sendKeys(reverse);
+		driver.findElement(By.name("username")).sendKeys("Test");
 		}catch(Exception e) {
 			System.out.println(e);
 		}
 		driver.findElement(By.name("password")).sendKeys("Piuld@4u6363");
-		driver.findElement(By.name("submit_login")).click();
+	    driver.findElement(By.name("submit_login")).click();
 		driver.quit();
 		
 		

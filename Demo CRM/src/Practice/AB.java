@@ -15,6 +15,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import junit.framework.Assert;
+
 public class AB {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\SSTS\\OpKey\\OpKey Execution Agent\\AgentData\\Plugins\\libs\\Drivers\\chromedriver.exe");
@@ -39,6 +41,8 @@ public class AB {
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyPress(KeyEvent.VK_ENTER);
+		String actualValue = driver.findElement(By.xpath("")).getAttribute("Value");
+		Assert.assertEquals(actualValue, "");
 		Thread.sleep(5000);
 		driver.quit();
 		
