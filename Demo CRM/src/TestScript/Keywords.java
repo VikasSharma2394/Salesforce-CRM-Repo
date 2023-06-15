@@ -23,7 +23,7 @@ static FileInputStream file;
 static Properties prop;
 Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 public void openBrowser(String snapshotPath, String keyword, String wantSnapshot) throws Exception{
-System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\SSTS\\OpKey\\OpKey Execution Agent\\AgentData\\Plugins\\libs\\Drivers\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver","C:\\Users\\VIKAS~1.SHA\\AppData\\Local\\CresTech\\OpKey\\AgentData\\Drivers\\chromedriver.exe");
 driver = new ChromeDriver();
 driver.manage().window().maximize();
 if(wantSnapshot.equals("Yes")) {
