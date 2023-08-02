@@ -10,8 +10,9 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Assert;
 import org.junit.Test;
+
+import junit.framework.Assert;
 
 
 
@@ -96,7 +97,7 @@ public class ExecuteLeadTest {
 				}else {
 					System.out.println(timestamp+" Keyword skipped during execution as its runmode value is NO");
 				}
-				System.out.println();
+				//System.out.println();
 			}
 		}
 		for(int i=0; i<data.size();i++) {
