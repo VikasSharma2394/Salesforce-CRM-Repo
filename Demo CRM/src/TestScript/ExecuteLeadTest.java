@@ -16,7 +16,7 @@ import junit.framework.Assert;
 
 
 
-public class ExecuteLeadTest {
+public class ExecuteLeadTest extends Keywords{
 	static FileInputStream propFile;
 	static Properties prop;
 	@Test
@@ -42,8 +42,10 @@ public class ExecuteLeadTest {
 					break;
 				case NUMERIC:
 					data.add(celldata.getNumericCellValue());
+					break;
 				case BOOLEAN:
 					data.add(celldata.getBooleanCellValue());
+					break;
 				}
 			}
 			

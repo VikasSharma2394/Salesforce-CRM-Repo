@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-10T11:42:09 IST" name="IFrame-Suite" finished-at="2023-08-10T11:42:30 IST" duration-ms="20869">
+    <groups>
+    </groups>
+    <test started-at="2023-08-10T11:42:09 IST" name="IFrame_Test" finished-at="2023-08-10T11:42:30 IST" duration-ms="20869">
+      <class name="TestScript.TestGoogle">
+        <test-method signature="JavaScriptTest()[pri:0, instance:TestScript.TestGoogle@61001b64]" started-at="2023-08-10T11:42:21 IST" name="JavaScriptTest" finished-at="2023-08-10T11:42:30 IST" duration-ms="9342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptTest -->
+        <test-method signature="Test12()[pri:0, instance:TestScript.TestGoogle@61001b64]" started-at="2023-08-10T11:42:30 IST" name="Test12" finished-at="2023-08-10T11:42:30 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test12 -->
+      </class> <!-- TestScript.TestGoogle -->
+      <class name="TestScript.iFrameTest">
+        <test-method signature="iFrame()[pri:0, instance:TestScript.iFrameTest@32502377]" started-at="2023-08-10T11:42:10 IST" name="iFrame" finished-at="2023-08-10T11:42:21 IST" duration-ms="11443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iFrame -->
+      </class> <!-- TestScript.iFrameTest -->
+    </test> <!-- IFrame_Test -->
+  </suite> <!-- IFrame-Suite -->
+</testng-results>
