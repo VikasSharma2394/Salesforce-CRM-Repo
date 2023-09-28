@@ -17,6 +17,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Lead Test/Salesforce Keywords.jar"/>
-	<classpathentry kind="lib" path="C:/Users/vikas.sharma/Downloads/jar_files/ashot-1.5.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

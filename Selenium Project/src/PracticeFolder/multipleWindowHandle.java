@@ -11,9 +11,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.edge.EdgeDriver;
 
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class multipleWindowHandle {
 	public static void main(String[] args)throws Exception {
@@ -30,8 +27,6 @@ public class multipleWindowHandle {
 		File srcFile = edge.getScreenshotAs(OutputType.FILE);
 		File destFile = new File("C:\\Users\\vikas.sharma\\Downloads\\edgedriver_win64 (4)\\Driver_Notes\\Vikas.png");
 		FileUtils.copyFile(srcFile, destFile);
-		Screenshot s=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(edge);
-        ImageIO.write(s.getImage(),"PNG",new File("C:\\Users\\vikas.sharma\\Downloads\\edgedriver_win64 (4)\\Driver_Notes\\FSS.png"));
 		Thread.sleep(5000);
 		edge.quit();
 		}

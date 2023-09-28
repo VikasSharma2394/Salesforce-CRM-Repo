@@ -10,12 +10,13 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Assert;
 import org.junit.Test;
 
+import junit.framework.Assert;
 
 
-public class ExecuteLeadTest {
+
+public class ExecuteLeadTest extends Keywords{
 	static FileInputStream propFile;
 	static Properties prop;
 	@Test
@@ -41,8 +42,10 @@ public class ExecuteLeadTest {
 					break;
 				case NUMERIC:
 					data.add(celldata.getNumericCellValue());
+					break;
 				case BOOLEAN:
 					data.add(celldata.getBooleanCellValue());
+					break;
 				}
 			}
 			
@@ -96,7 +99,7 @@ public class ExecuteLeadTest {
 				}else {
 					System.out.println(timestamp+" Keyword skipped during execution as its runmode value is NO");
 				}
-				System.out.println();
+				//System.out.println();
 			}
 		}
 		for(int i=0; i<data.size();i++) {

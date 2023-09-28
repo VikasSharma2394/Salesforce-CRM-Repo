@@ -1,0 +1,8 @@
+<suite name="IFrame-Suite" >
+   <test name="IFrame_Test" >
+       <classes> 
+          <class name="TestScript.iFrameTest" />
+          <class name="TestScript.TestGoogle" />
+       </classes>
+   </test>
+ </suite>
