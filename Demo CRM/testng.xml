@@ -1,6 +1,6 @@
 <suite name="IFrame-Suite" >
    <test name="IFrame_Test" >
-       <classes> 
+       <classes>
           <class name="TestScript.iFrameTest" />
           <class name="TestScript.TestGoogle" />
        </classes>

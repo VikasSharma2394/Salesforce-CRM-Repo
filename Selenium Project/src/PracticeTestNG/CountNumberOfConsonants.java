@@ -1,7 +1,7 @@
 package PracticeTestNG;
 
 public class CountNumberOfConsonants {
-	static String s = "I will take a leave today";
+	static String s = "Vikas Sharma";
 	static int countConsonants = 0;
 	static int countVowels = 0;
 	public static int getNumberOfConsonants() {

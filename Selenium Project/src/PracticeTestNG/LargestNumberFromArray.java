@@ -1,9 +1,10 @@
 package PracticeTestNG;
 
 public class LargestNumberFromArray {
-	static int a [] = {3,5,2,1,9,2,3};
+	static int a [] = {3,5,2,1,9,0,2,3};
 	static int temp;
 	static int smallestNumber;
+	static int largestNumber;
 	public static int getLargestNumber () {
 		for(int i=0; i<=a.length-1;i++) {
 			for(int j=i+1; j<=a.length-1;j++) {
@@ -14,7 +15,7 @@ public class LargestNumberFromArray {
 				}
 			}
 		}
-		return a[a.length-1];
+		return largestNumber =  a[a.length-1];
 	}
 	public static void main(String[] args) {
 		System.out.println("Largest number is "+getLargestNumber());
@@ -36,5 +37,4 @@ public class LargestNumberFromArray {
 		}
 		return smallestNumber;
 	}
-
 }

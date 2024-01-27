@@ -1,5 +1,7 @@
 package TestScript;
 
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
 import java.io.File;
 import java.util.List;
 
@@ -13,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -33,8 +36,14 @@ public class TestGoogle {
 		FileUtils.copyFile(srcFile, destFile);
 		List<WebElement> list = driver.findElements(By.tagName("a"));
 		System.out.println(list.size());
+		driver.findElement(By.name("q")).clear();
+		StringSelection selection = new StringSelection("beautiful");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
 		Actions actions = new Actions(driver);
-		actions.keyDown(driver.findElement(By.name("")), Keys.SHIFT);
+		actions.keyDown(Keys.SHIFT).sendKeys(driver.findElement(By.name("q")),"vikas").build().perform();
+		actions.clickAndHold().build().perform();
+		String currentURL = driver.getCurrentUrl();
+		Assert.assertEquals(currentURL, "https://www.google.com/");
 		Thread.sleep(5000);
 		}
 		finally {
