@@ -5,7 +5,6 @@ public class parentClass extends childClass {
 	public void Test() {
 		System.out.println();
 	}
-	@Override
 	void Test4() {
 		
 	}

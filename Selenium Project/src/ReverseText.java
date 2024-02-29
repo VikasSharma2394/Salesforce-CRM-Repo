@@ -1,7 +1,7 @@
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
-import TestScript.*;
+import TestScript.Keywords;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;

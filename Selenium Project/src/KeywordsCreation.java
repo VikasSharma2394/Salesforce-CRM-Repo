@@ -1,5 +1,4 @@
 import java.io.FileInputStream;
-import TestScript.*;
 import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
