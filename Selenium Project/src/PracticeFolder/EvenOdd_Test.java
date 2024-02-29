@@ -13,12 +13,16 @@ public class EvenOdd_Test {
 			}
 		}
 		System.out.println("Even number count is "+evenCount);
-		System.out.println("Even number count is "+oddCount);
+		System.out.println("Odd number count is "+oddCount);
 		EvenOdd_Test e = new EvenOdd_Test();
 		e.getEvenOddStatus();
+		String s = "Vikas";
+		String s1 = " Sharma";
+		String s3 = s+s1;
+		System.out.println(s3);
 	}
 	public void getEvenOddStatus() {
-		int j = 24;
+		int j = 25;
 		if(j%2==0) {
 			System.out.println(j+" is even");
 		}else {

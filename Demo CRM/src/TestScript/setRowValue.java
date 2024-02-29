@@ -25,7 +25,7 @@ public static void excelSetRowValue(String sheetName, int rowNum, int cellNum, S
 			fileInput = new FileInputStream("C:\\Users\\Vikas.Sharma\\Desktop\\ExcelTest.xlsx");
 	wrk = new XSSFWorkbook(fileInput);
 	sheet = wrk.getSheet("TestData");
-	Row row1 = sheet.createRow(actualRowNum);
+	Row row1 = sheet.getRow(actualRowNum);
 	Cell cell1 = row1.createCell(actualColumnNum);
 	cell1.setCellValue(value);
 		}finally{
@@ -49,6 +49,12 @@ public static void excelSetRowValue(String sheetName, int rowNum, int cellNum, S
 				case STRING:
 					a.add(celldata.getStringCellValue());
 					break;
+				case NUMERIC:
+					a.add(celldata.getNumericCellValue());
+					break;
+				case BOOLEAN:
+					a.add(celldata.getBooleanCellValue());
+					break;
 				}
 			}
 		}
@@ -58,6 +64,6 @@ public static void excelSetRowValue(String sheetName, int rowNum, int cellNum, S
 		System.out.println("Values present in the cells of the excel file are: "+a);
 }
 	public static void main(String[] args)throws Exception {
-		setRowValue.excelSetRowValue("TestData", 11, 8, "Testing Done");
+		setRowValue.excelSetRowValue("TestData", 14, 16, "Bye");
 	}
 }

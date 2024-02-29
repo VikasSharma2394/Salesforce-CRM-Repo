@@ -1,6 +1,6 @@
 package PracticeTestNG;
 
-public class LargestNumberFromArray {
+public class LargestNumberFromArray  {
 	static int a [] = {3,5,2,1,9,0,2,3};
 	static int temp;
 	static int smallestNumber;
@@ -29,6 +29,9 @@ public class LargestNumberFromArray {
 					a[i] = a[j];
 					a[j] = temp;
 				}
+			}
+			for(int x:a) {
+				System.out.println(x);
 			}
 		}if(a[a.length-2]<a[a.length-1]) {
 			smallestNumber =a[a.length-2];
